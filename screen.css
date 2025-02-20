@@ -1,4 +1,134 @@
-/* Add screen styles below */
-a.active {
-    font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+:root{
+    --main-bg-color: #e9e9e9;
+    --primary-text-color: #424242;
+    --accent-color: #ff3d3c;
+}
+
+body {
+background-color: var(--main-bg-color);
+color: var(--primary-text-color);
+font-family:"Inter", sans-serif; 
+margin: 0;
+padding: 0;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 100px;
+}
+header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+main{
+    background: url("polaroid.png") no-repeat center 100px; 
+
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.hero{
+text-align: center;
+min-height: 800px;
+}
+.hero h2 {
+font-size: 9em;
+line-height: 1em;
+text-transform: uppercase;
+margin: 0;
+}
+
+.details ul li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 35px;
+    line-height: 2;
+    font-size: 19px;
+    text-align: left;
+    margin-left: 200px;
+    
+    }
+
+.details ul li.WiFi {
+    background: url('wifi-solid.svg') no-repeat center left;
+    background-size: 25px 25px;
+}
+.details ul li.cloud {
+    background: url('cloud-arrow-up-solid.svg') no-repeat center left;
+    background-size: 25px 25px;
+}
+.details ul li.QR {
+    background: url('qrcode-solid.svg') no-repeat center left;
+    background-size: 25px 25px;
+}
+.details ul li.image {
+    background: url('images-solid.svg') no-repeat center left;
+    background-size: 25px 25px;
+}
+
+
+
+.cta-rectangle {
+    background-color: #D6D7D6;  
+    padding: 25px;        
+    width: 500px; 
+   border-radius: 25px;    
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+   margin-bottom: 100px;
+  
+}
+
+.cta-rectangle input[type="button"] {
+    background-color: var(--accent-color);
+color: white;
+border: none;
+padding: 15px 15px;
+font-size: 1em;
+font-family:"Inter", sans-serif; 
+text-align: center;
+font-weight: bolder;
+}
+
+.cta-rectangle input[type="button"]:hover {
+    background-color: #ff5754;
+}
+.cta-rectangle input[type="text"] {
+  border: none;
+  width: 345px;
+  height: 48px;
+  text-align: center;
+}
+
+.cta h3{
+    text-align: center;
+    font-size: 38px;
+   margin: 0;
+padding-top: 100px;
+margin-bottom: -30px;
+
+}
+
+.hero h2{
+margin-top: -90px;
+font-size: 132px;}
+
+.details ul{
+  margin-bottom: -55px;
+}
+
+.details h3 {
+    text-align: center;
+    font-size: 38px;
+}
+.details p{
+    height: 7.5em;
+   overflow: hidden;
+   line-height: 1.5;
+   margin: 0 auto;
+   width: 55%;
 }
